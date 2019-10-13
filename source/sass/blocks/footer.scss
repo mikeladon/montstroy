@@ -123,14 +123,14 @@
   left: 50%;
   transform: translateX(-50%);
   width: 580px;
-  padding: 43px 103px 35px 74px;
+  padding: 39px 103px 35px 74px;
   background-color: #ffffff;
 }
 
 .appointment__title {
   padding-left: 35px;
-  margin-bottom: 18px;
-  font-family: "Raleway";
+  margin-bottom: 21px;
+  font-family: "Raleway-Black";
   font-size: 25px;
   line-height: 50px;
   letter-spacing: 1px;
@@ -301,7 +301,7 @@
   display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .footer {
     padding-top: 30px;
     padding-bottom: 25px;
@@ -724,7 +724,7 @@
   }
 
   .appointment__title {
-    margin-bottom: 4px;
+    margin-bottom: 1px;
   }
 
   .appointment-privacy {

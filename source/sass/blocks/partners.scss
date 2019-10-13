@@ -138,11 +138,16 @@
   padding-left: 30px;
 }
 
+.partners__item--mirror .partners__image,
+.partners__item--warm .partners__image {
+  padding-left: 50px;
+}
+
 .partners__input {
     display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .partners {
     position: relative;
     margin-bottom: 65px;
@@ -212,6 +217,11 @@
   }
 
   .partners__image {
+    padding-left: 0px;
+  }
+
+  .partners__item--mirror .partners__image,
+  .partners__item--warm .partners__image {
     padding-left: 0px;
   }
 
