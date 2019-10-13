@@ -1,0 +1,396 @@
+  .projects {
+    margin-bottom: 110px;
+  }
+
+  .projects__title {
+    position: relative;
+    margin-bottom: 35px;
+    color: #000000;
+    font-family: "Raleway-Black";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  .projects__title::before {
+    content: "";
+
+    position: absolute;
+    left: 25.5%;
+    top: 24px;
+
+    height: 2px;
+    width: 74.5%;
+
+    background: #323232;
+  }
+
+  .projects__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .projects__item {
+    position: relative;
+    width: 24.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    min-height: 290px;
+    margin-bottom: 3px;
+    padding-top: 53px;
+    padding-left: 29px;
+    padding-right: 25px;
+
+    background-size: cover;
+  }
+
+  .projects__item:nth-child(4n + 6),
+  .projects__item:nth-child(4n + 5) {
+    width: 49.8%;
+    max-width: 583px;
+    padding-top: 41px;
+    padding-right: 100px;
+  }
+
+  .projects__item--pinocchio {
+    padding-right: 70px;
+
+    & .projects__caption {
+      margin-bottom: 15px;
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+
+  .projects__item--futur {
+    background-image: url("../img/project-futur-desktop.jpg");
+  }
+
+  .projects__item--eagle {
+    background-image: url("../img/project-eagle-desktop.jpg");
+    padding-top: 53px;
+    padding-right: 10px;
+
+    & .projects__caption {
+      margin-bottom: 22px;
+    }
+  }
+
+  .projects__item--family {
+    background-image: url("../img/project-family-desktop.jpg");
+    padding-top: 53px;
+    padding-right: 20px;
+
+    & .projects__caption {
+      margin-bottom: 22px;
+    }
+  }
+
+  .projects__item--medial {
+    background-image: url("../img/project-medial-desktop.jpg");
+    padding-top: 53px;
+    padding-right: 15px;
+
+    & .projects__caption {
+      margin-bottom: 45px;
+    }
+  }
+
+  .projects__item--energy {
+    background-image: url("../img/project-energy-desktop.jpg");
+
+    & .projects__caption {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .projects__item--pinocchio {
+    background-image: url("../img/project-pinocchio-desktop.jpg");
+  }
+
+  .projects__caption {
+    margin-bottom: 47px;
+
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 900;
+    font-family: "Raleway";
+  }
+
+  .projects__text {
+    padding-right: 32px;
+
+    font-size: 15px;
+    line-height: 22px;
+    color: #fff;
+  }
+
+  .projects__text-hide {
+    display: inline;
+  }
+
+  .projects__arrow {
+    display: block;
+    box-sizing: border-box;
+    height: 34px;
+    width: 46px;
+    border: 2px solid #fff;
+    opacity: 0.34;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 2px;
+      background-color: #fff;
+      top: 14px;
+      left: 13px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 10px;
+      top: 12px;
+      border: 3px solid transparent;
+      border-left: 5px solid #fff;
+    }
+
+    &:hover {
+      background-color: #00ffd8;
+      opacity: 1;
+      border-color: #00ffd8;
+    }
+
+    &:hover::before {
+      background-color: #545454;
+    }
+
+    &:hover::after {
+      border-left-color: #545454;
+    }
+  }
+
+@media (max-width: 1023px) {
+  .projects {
+    margin-bottom: 62px;
+  }
+
+  .projects__title {
+    margin-bottom: 33px;
+
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.04px;
+  }
+
+  .projects__title::before {
+    display: none;
+  }
+
+  .projects__item {
+    box-sizing: border-box;
+    min-width: 724px;
+    width: unset;
+    min-height: 180px;
+    padding-top: 44px;
+    padding-left: 44px;
+    padding-right: 110px;
+    margin-bottom: 10px;
+  }
+
+  .projects__list {
+    flex-direction: column;
+  }
+
+  .projects__item--futur {
+    background-image: url("../img/project-futur-tablet.jpg");
+  }
+
+  .projects__item--eagle {
+    background-image: url("../img/project-eagle-tablet.jpg");
+
+    & .projects__caption {
+      margin-bottom: 15px;
+    }
+  }
+
+  .projects__item--family {
+    background-image: url("../img/project-family-tablet.jpg");
+    padding-top: 35px;
+    padding-right: 200px;
+
+    & .projects__caption {
+      margin-bottom: 16px;
+    }
+  }
+
+  .projects__item--medial {
+    background-image: url("../img/project-medial-tablet.jpg");
+    padding-top: 32px;
+    padding-right: 150px;
+
+    & .projects__caption {
+      margin-bottom: 18px;
+    }
+  }
+
+  .projects__item--energy {
+    background-image: url("../img/project-energy-tablet.jpg");
+  }
+
+  .projects__item--pinocchio {
+    background-image: url("../img/project-pinocchio-tablet.jpg");
+    padding-right: 50px;
+
+    & .projects__caption {
+      margin-bottom: 4px;
+    }
+  }
+
+  .projects__caption {
+    margin: 0px;
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    text-align: left;
+    font-family: "Roboto";
+  }
+
+  .projects__item:nth-child(4n + 6),
+  .projects__item:nth-child(4n + 5) {
+    padding-top: 35px;
+    max-width: 100%;
+    width: unset;
+
+    & .projects__caption {
+      margin: 0px;
+
+      font-family: "Roboto";
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+
+  .projects__text {
+    padding-right: 0px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
+    opacity: 0.65;
+  }
+
+  .projects__text-hide {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .projects {
+    margin-bottom: 22px;
+  }
+
+  .projects__title {
+    padding-left: 0px;
+    margin-bottom: 5px;
+
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+  }
+
+  .projects__list {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .projects__item {
+    min-width: 280px;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 26px;
+    padding-bottom: 0px;
+  }
+
+  .projects__item--futur {
+    background-image: url("../img/project-futur-mobile.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .projects__item--eagle {
+    background-image: url("../img/project-eagle-mobile.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .projects__item--family {
+    background-image: url("../img/project-family-mobile.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .projects__item--medial {
+    background-image: url("../img/project-medial-mobile.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .projects__item--energy {
+    background-image: url("../img/project-energy-mobile.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .projects__item--pinocchio {
+    background-image: url("../img/project-pinocchio-mobile.jpg");
+    background-repeat: no-repeat; 
+  }
+
+  .projects__item:nth-child(4n + 6),
+  .projects__item:nth-child(4n + 5) {
+    padding: 0px;
+    padding-top: 26px;
+    width: unset;
+    max-width: 100%;
+
+    & .projects__caption {
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+
+  .projects__caption {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .projects__text {
+    display: none;
+  }
+
+  .projects__arrow {
+    display: none;
+  }
+}

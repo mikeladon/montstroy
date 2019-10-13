@@ -1,0 +1,187 @@
+.intro {
+	background: linear-gradient(0deg,#000 0%,rgba(0,0,0,.2) 63%,rgba(255,255,255,0) 100%);
+	overflow: hidden;
+}
+
+.intro-banner {
+	width: 100%;
+	object-fit: cover;
+	height: 935px;
+}
+
+.intro-container {
+	margin-top: -795px;
+}
+
+.intro-heading {
+	max-width: 1160px;
+	margin-bottom: 20px;
+
+	color: #fffffe;
+	font-family: "Raleway-Black";
+	font-size: 72px;
+	line-height: 89px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 3.6px;
+}
+
+.intro-info {
+	width: 1015px;
+	margin-bottom: 53px;
+
+	color: #fffffe;
+	font-family: "Roboto";
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 38px;
+}
+
+.intro-info-year {
+	color: #00ffd8;
+}
+
+.intro-info-mobile {
+	display: none;
+}
+
+.intro-buttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 620px;
+	justify-content: space-between;
+	padding-bottom: 326px;
+}
+
+.button-services {
+	padding: 8px 78px;
+
+	background-color: #00ffd8;
+	color: #000000;
+	font-family: "Roboto-Black";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.button-contact {
+	padding: 8px 52px;
+
+	color: #ffffff;
+	font-family: "Roboto-Black";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 40px;
+	text-transform: uppercase;
+
+	box-shadow: 0 2px 3px 1px rgba(0, 255, 216, 0.27);
+	border: 1px solid #bbfff5;
+	background: transparent;
+}
+
+@media (max-width: 1023px) {
+	.intro-container {
+		margin-top: -820px;
+		margin-left: 60px;
+	}
+
+	.intro-heading {
+		width: 610px;
+		margin-bottom: 18px;
+
+		color: #fffffe;
+		font-family: "Raleway-Black";
+		font-size: 38px;
+		line-height: 46px;
+		letter-spacing: 1.8px;
+	}
+
+	.intro-info {
+		width: 585px;
+		margin-bottom: 80px;
+
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20px;
+	}
+
+	.intro-buttons {
+		min-width: 600px;
+    max-width: max-content;
+		padding-bottom: 130px;
+	}
+
+	.button-services {
+		padding: 8px 88px;
+
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+	}
+
+	.button-contact {
+		padding: 8px 66px;
+
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.intro {
+		position: relative;
+	}
+
+	.intro-container {
+		margin-left: 0;
+		margin-top: -814px;
+	}
+
+	.intro-info {
+		display: none;
+	}
+
+	.intro-info-mobile {
+		display: block;
+		width: 250px;
+		margin: 0 auto;
+		margin-bottom: 57px;
+
+		text-align: center;
+		color: #fffffe;
+		font-family: Roboto;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+	.intro-heading {
+		width: 260px;
+		margin: 0 auto;
+		margin-bottom: 18px;
+
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		letter-spacing: 0.8px;
+		text-align: center;
+	}
+
+	.intro-buttons {
+		flex-direction: column;
+		min-width: 280px;
+		padding-bottom: 52px;
+		margin: 0 auto;
+	}
+
+	.button-services {
+		padding: 17px 60px;
+		margin-bottom: 8px;
+	}
+
+	.button-contact {
+		padding: 9px 49px;
+	}
+}

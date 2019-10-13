@@ -1,0 +1,63 @@
+.map__wrapper {
+  margin: 0;
+  position: relative;
+  height: 807px;
+  border-bottom: 2px solid #00ffd7;
+  overflow: hidden;
+}
+
+.map__title {
+  display: none;
+}
+
+.map__iframe,
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.map__image {
+  margin: 0;;
+  z-index: 5;
+}
+
+.map__iframe {
+  z-index: 10;
+  height: 805px;
+  border: none;
+}
+
+@media (max-width: 1023px) {
+  .map__wrapper {
+    height: 350px;
+  }
+
+  .map__iframe {
+    height: 348px;
+  }
+}
+
+@media (max-width: 767px) {
+  .map__wrapper {
+    height: 200px;
+  }
+
+  .map__title {
+    display: block;
+    padding: 0 6%;
+    margin-bottom: 20px;
+    font-family: "Raleway-Black";
+    font-size: 20px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .map__iframe {
+    z-index: 10;
+    height: 198px;
+  }
+}

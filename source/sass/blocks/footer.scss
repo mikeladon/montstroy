@@ -1,0 +1,734 @@
+.footer {
+  padding-top: 65px;
+  padding-bottom: 45px;
+  color: #ffffff;
+  background-color: #000000;
+
+  &__wrapper-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 12px;
+    max-width: 1190px;
+    margin-bottom: 180px;
+  }
+
+  &__social,
+  &__contacts {
+    width: 18%;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 43px;
+  width: 141px;
+  height: 60px;
+}
+
+.footer__name {
+  margin: 0px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: -0.1px;
+}
+
+.footer__contacts {
+  order: 1;
+  margin-top: -7px;
+  padding-left: 33px;
+  font-size: 16px;
+  line-height: 28px;
+
+  &--mobile {
+    display: none;
+  }
+
+  & svg {
+    position: absolute;
+    top: 6px;
+    left: -27px;
+    fill: #00ceb8;
+  }
+}
+
+.footer__address,
+.footer__mail,
+.footer__phone {
+  position: relative;
+}
+
+.footer__address {
+  margin-bottom: 40px;
+  font-style: normal;
+}
+
+.footer__mail {
+  position: relative;
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.footer__phone {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+
+  & a {
+    color: #ffffff;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  & span {
+    margin-top: -1px;
+    font-size: 13px;
+    line-height: normal;
+    opacity: 0.6;
+  }
+}
+
+.footer__copyrights {
+  margin: 0 auto;
+  font-size: 10px;
+  line-height: 25px;
+  letter-spacing: 0.4px;
+  opacity: 0.25;
+  text-align: center;
+}
+
+.footer__copyrights-text {
+  margin: 0px;
+}
+
+.appointment {
+  position: absolute;
+  z-index: 10;
+  top: -250px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 580px;
+  padding: 43px 103px 35px 74px;
+  background-color: #ffffff;
+}
+
+.appointment__title {
+  padding-left: 35px;
+  margin-bottom: 18px;
+  font-family: "Raleway";
+  font-size: 25px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.appointment-privacy {
+  padding-left: 35px;
+  margin: 0 auto;
+  width: 335px;
+  margin-bottom: 34px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.5;
+
+  &__link {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding-bottom: 2px;
+    font: inherit;
+    color: #000000;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px 0 15px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 1.2px;
+
+  &::placeholder {
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 1.2px;
+    color: #000000;
+  }
+}
+
+.form__field-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.form__field--name,
+.form__field--phone {
+  width: 180px;
+}
+
+.form__field--email {
+  margin-bottom: 24px;
+}
+
+.form__field--text {
+  margin-bottom: 27px;
+}
+
+.form__button {
+  display: block;
+  margin-left: 103px;
+  padding: 2px 48px 10px 48px;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.footer-social {
+  order: -1;
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 140px;
+}
+
+.footer-social__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:first-child {
+    width: 35px;
+  }
+
+  &:nth-child(2) {
+    width: 21px;
+  }
+
+  &:last-child {
+    width: 22px;
+  }
+}
+
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social__icon {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: #ffffff;
+  }
+
+  &--vk {
+    width: 35px;
+    height: 35px;
+  }
+
+  &--twitter {
+    width: 27px;
+    height: 27px;
+  }
+
+  &--fb {
+    width: 26px;
+    height: 26px;
+  }
+
+  .footer-social__item--fb {
+    position: relative;
+  }
+
+  .footer-social__item--fb .footer-social__link--active,
+  .footer-social__item--fb .footer-social__link--hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.footer-nav-list {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 25px;
+
+    &__wrapper-top {
+      margin: 0 auto;
+      padding: 0 8.3%;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &__contacts {
+      order: -1;
+      width: 30%;
+      margin-bottom: 91px;
+      margin-left: 70.4%;
+      font-size: 14px;
+      line-height: 28px;
+
+      & svg {
+        top: 7px;
+        left: -29px;
+      }
+    }
+
+    &__social {
+      width: 100%;
+    }
+  }
+
+  .logo-icon-footer {
+    display: none;
+  }
+
+  .footer__name {
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 21%;
+
+    font-size: 12px;
+    letter-spacing: -0.1px;
+    opacity: 0.5;
+  }
+
+  .footer__mail {
+    margin-bottom: 34px;
+    letter-spacing: 0.4px;
+  }
+
+  .footer__phone span {
+    font-size: 12px;
+  }
+
+
+ .form__field-wrapper,
+  .form__field--email {
+    margin-bottom: 8px;
+  }
+
+  .form__input {
+    width: 100%;
+    padding: 11px 0 14px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    line-height: 35px;
+    letter-spacing: 0.6px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 35px;
+      letter-spacing: 0.6px;
+      color: #000000;
+    }
+  }
+
+  .form__field--name {
+    width: 118px;
+  }
+
+  .form__field--phone {
+    width: 152px;
+  }
+
+  .form__field--text {
+    margin-bottom: 13px;
+  }
+
+  .form__button {
+    display: block;
+    margin-left: 73px;
+    padding: 3px 42px 6px 42px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: 0.1px;
+  }
+
+    .footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 12px;
+    line-height: 38px;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-social__list {
+    margin-left: auto;
+    margin-top: 5px;
+    width: 13.7%;
+  }
+
+  .footer-social__item {
+    &:first-child {
+      width: 22px;
+    }
+
+    &:nth-child(2) {
+      width: 15px;
+    }
+
+    &:last-child {
+      width: 15px;
+    }
+  }
+
+  .footer-social__icon {
+    &--vk {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--twitter {
+      width: 17px;
+      height: 17px;
+    }
+
+    &--fb {
+      width: 17px;
+      height: 20px;
+    }
+  }
+
+    .footer-nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 48.4%;
+  }
+
+  .footer-nav-list__item {
+    opacity: 0.5;
+
+    & a {
+      font: inherit;
+      color: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .appointment {
+    top: -150px;
+    left: 8.3%;
+    transform: none;
+    width: 413px;
+    padding: 32px 51px 30px;
+  }
+
+  .appointment__title {
+    padding-left: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 0.8px;
+  }
+
+  .appointment-privacy {
+    padding-left: 0;
+    margin-bottom: 26px;
+    width: 312px;
+    font-size: 10px;
+    line-height: 12px;
+
+    &__link {
+      width: 160px;
+      padding-bottom: 0;
+    }
+  }
+
+  .appointment-privacy__text {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 13px;
+    background-color: #000000;
+  }
+
+  .footer__wrapper-top {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 13px;
+  }
+
+  .footer__contacts {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    width: 60%;
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 1;
+    background-color: #000000;
+
+    &--mobile {
+      padding-left: 0;
+      line-height: 29px;
+      letter-spacing: -0.1px;
+      opacity: 0.6;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 32px;
+      width: 67.8%;
+      order: 1;
+      background-color: #1a1a1a;
+    }
+
+    & svg {
+      top: 4px;
+    }
+  }
+
+  .footer__contacts--mobile svg {
+    top: 8px;
+    left: -32px;
+    fill: #fff;
+  }
+
+  .footer__address {
+    position: relative;
+    margin-bottom: 7px;
+  }
+
+  .footer__contacts--mobile .footer__address {
+    position: relative;
+    margin-bottom: 14px;
+  }
+
+  .footer__mail {
+    position: relative;
+    display: block;
+    margin-bottom: 11px;
+    font-weight: 400;
+  }
+
+  .footer__contacts--mobile .footer__mail {
+    position: relative;
+    margin-bottom: 14px;
+  }
+
+  .footer__phone {
+    position: relative;
+
+    & a {
+      letter-spacing: -0.2px;
+    }
+
+    & span {
+      margin-top: 3px;
+    }
+  }
+
+  .footer__contacts--mobile .footer__phone {
+    position: relative;
+
+    & span {
+      margin-top: 0;
+    }
+  }
+
+  .footer__icon {
+    fill: #ffffff;
+    opacity: 0.5;
+    position: absolute;
+    top: 6px;
+    left: -30px;
+  }
+
+  .footer__name {
+    display: none;
+  }
+
+  .footer__copyrights {
+    width: 63%;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    opacity: 0.33;
+  }
+
+    .form__field-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+
+  .form__field--name,
+  .form__field--phone {
+    width: 43.5%;
+  }
+
+  .form__field--email {
+    margin-bottom: 10px;
+  }
+
+  .form__field--text {
+    margin-bottom: 23px;
+  }
+
+  .form__button {
+    display: block;
+    margin: 0 auto;
+    padding: 3px 40px 6px 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: 0.1px;
+  }
+
+    .footer-social {
+    order: 1;
+    flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: none;
+    background-color: #1a1a1a;
+  }
+
+  .footer-social__list {
+    order: 2;
+    margin: 0 auto 0 7%;
+    width: 148px;
+  }
+
+  .footer-social__item {
+    &:first-child {
+      width: 40px;
+    }
+
+    &:nth-child(2) {
+      width: 26px;
+    }
+
+    &:last-child {
+      width: 21px;
+    }
+  }
+
+  .footer-social__icon {
+    &--vk {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--twitter {
+      width: 31px;
+      height: 31px;
+    }
+
+    &--fb {
+      width: 30px;
+      height: 29px;
+    }
+  }
+
+  .footer-nav-list {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .footer-nav-list__item {
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    & a {
+      display: block;
+      padding: 15px 6% 16px;
+      font: inherit;
+      color: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .appointment {
+    position: static;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    padding: 40px 6% 60px;
+  }
+
+  .appointment__title {
+    margin-bottom: 4px;
+  }
+
+  .appointment-privacy {
+    margin-bottom: 29px;
+    width: 250px;
+  }
+}
