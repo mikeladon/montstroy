@@ -16,6 +16,7 @@ serviceBlocks.forEach(function (block) {
 		let activeBlock = document.querySelector(".active-item");
 		activeBlock.classList.remove("active-item");
 		this.classList.add("active-item");
+		this.parentElement.style.height = this.clientHeight + "px";
 	})
 });
 
@@ -70,3 +71,10 @@ openSectionsButton.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	sectionsList.classList.toggle("open-list");
 })
+
+// Добавляем маску для телефона
+var element = document.querySelector('.input-phone');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+var mask = IMask(element, maskOptions);

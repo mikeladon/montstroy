@@ -55,7 +55,7 @@
 }
 
 .button-services {
-	padding: 8px 78px;
+	padding: 16px 78px;
 
 	background-color: #00ffd8;
 	color: #000000;
@@ -114,7 +114,7 @@
 	}
 
 	.button-services {
-		padding: 8px 88px;
+		padding: 16px 88px;
 
 		font-size: 16px;
 		font-weight: 400;
@@ -171,17 +171,20 @@
 
 	.intro-buttons {
 		flex-direction: column;
-		min-width: 280px;
+		min-width: unset;
+		width: 281px;
 		padding-bottom: 52px;
 		margin: 0 auto;
 	}
 
 	.button-services {
-		padding: 17px 60px;
+		padding: 17px 81px;
 		margin-bottom: 8px;
+		max-width: 281px;
 	}
 
 	.button-contact {
-		padding: 9px 49px;
+		padding: 10px 62px;
+		max-width: 281px;
 	}
 }
