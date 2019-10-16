@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 65px;
+  padding-top: 73px;
   padding-bottom: 45px;
   color: #ffffff;
   background-color: #000000;
@@ -129,7 +129,7 @@
 
 .appointment__title {
   padding-left: 35px;
-  margin-bottom: 21px;
+  margin-bottom: 30px;
   font-family: "Raleway-Black";
   font-size: 25px;
   line-height: 50px;
@@ -167,28 +167,29 @@
   }
 }
 
+.form__label {
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 1.2px;
+  color: #000000;
+}
+
 .form__input {
   width: 100%;
-  padding: 10px 0 15px;
+  padding: 5px 0 5px;
+  margin-top: -10px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 20px;
-  line-height: 50px;
+  line-height: 22px;
   letter-spacing: 1.2px;
-
-  &::placeholder {
-    font-size: 20px;
-    line-height: 50px;
-    letter-spacing: 1.2px;
-    color: #000000;
-  }
 }
 
 .form__field-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 .form__field--name,
@@ -197,7 +198,7 @@
 }
 
 .form__field--email {
-  margin-bottom: 24px;
+  margin-bottom: 34px;
 }
 
 .form__field--text {
@@ -301,7 +302,7 @@
   display: none;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .footer {
     padding-top: 30px;
     padding-bottom: 25px;
@@ -359,24 +360,25 @@
 
  .form__field-wrapper,
   .form__field--email {
-    margin-bottom: 8px;
+    margin-bottom: 22px;
+  }
+
+  .form__label {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    color: #000000;
+
   }
 
   .form__input {
     width: 100%;
-    padding: 11px 0 14px;
+    padding: 5px 0 5px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 14px;
-    line-height: 35px;
+    line-height: 16px;
     letter-spacing: 0.6px;
-
-    &::placeholder {
-      font-size: 14px;
-      line-height: 35px;
-      letter-spacing: 0.6px;
-      color: #000000;
-    }
   }
 
   .form__field--name {
@@ -481,7 +483,7 @@
 
   .appointment__title {
     padding-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 26px;
     font-size: 18px;
     line-height: 35px;
     letter-spacing: 0.8px;
@@ -618,7 +620,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 4px;
+    margin-bottom: 18px;
   }
 
   .form__field--name,
@@ -627,7 +629,7 @@
   }
 
   .form__field--email {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 
   .form__field--text {
@@ -724,7 +726,7 @@
   }
 
   .appointment__title {
-    margin-bottom: 1px;
+    margin-bottom: 16px;
   }
 
   .appointment-privacy {

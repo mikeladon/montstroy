@@ -1,16 +1,13 @@
 .intro {
 	background: linear-gradient(0deg,#000 0%,rgba(0,0,0,.2) 63%,rgba(255,255,255,0) 100%);
+	background-image: url("../img/intro-background.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
 	overflow: hidden;
 }
 
-.intro-banner {
-	width: 100%;
-	object-fit: cover;
-	height: 935px;
-}
-
 .intro-container {
-	margin-top: -795px;
+	margin-top: 147px;
 }
 
 .intro-heading {
@@ -81,9 +78,13 @@
 	background: transparent;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
+	.intro {
+		background-image: url("../img/intro-background-tablet.webp");
+	}
+
 	.intro-container {
-		margin-top: -820px;
+		margin-top: 123px;
 		margin-left: 60px;
 	}
 
@@ -133,11 +134,13 @@
 @media (max-width: 767px) {
 	.intro {
 		position: relative;
+		background-image: url("../img/intro-background-mobile.webp");
+		background-position: top;
 	}
 
 	.intro-container {
-		margin-left: 0;
-		margin-top: -814px;
+		margin-left: 0px;
+		margin-top: 128px;
 	}
 
 	.intro-info {

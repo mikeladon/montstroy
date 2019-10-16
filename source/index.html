@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>MontStroy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="МонтСтрой - строительно-монтажные работы">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -56,14 +57,6 @@
     <main class="main">
       <h2 class="visually-hidden">О нас</h2>
       <section class="intro">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/intro-background.webp">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/intro-background-tablet.webp">
-          <source type="image/webp" srcset="img/intro-background-mobile.webp">
-          <source media="(min-width: 1200px)" srcset="img/intro-background.jpg">
-          <source media="(min-width: 768px)" srcset="img/intro-background-tablet.jpg">
-          <img class="intro-banner" src="img/intro-background-mobile.jpg" width="320" height="465" alt="Полный комплекс строительных работ">
-        </picture>
         <div class="container intro-container">
           <div class="intro-text">
             <h3 class="title intro-heading">Cтроительно-монтажные работы</h3>
@@ -350,7 +343,7 @@
       <section class="map">
         <h2 class="title map__title">Контакты</h2>
         <p class="paragraph map__wrapper">
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.308706488796!2d37.615897415888206!3d55.63144350881278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1559442071177!5m2!1sru!2sru" width="600" height="450" allowfullscreen></iframe>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.308706488796!2d37.615897415888206!3d55.63144350881278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2fc83e8e4c1%3A0xf3651f74775f86c9!2z0JLQsNGA0YjQsNCy0LrQsCBTS1k!5e0!3m2!1sru!2sru!4v1559442071177!5m2!1sru!2sru" width="600" height="450" title="card" allowfullscreen></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop@1x.webp">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp">
@@ -450,25 +443,25 @@
           <form class="appointment__form form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__field-wrapper">
               <p class="paragraph form__field form__field--name">
-                <label class="form__label visually-hidden" for="name">Имя</label>
-                <input class="form__input" id="name" type="text" name="name" placeholder="Имя" required="">
+                <label class="form__label" for="name">Имя</label>
+                <input class="form__input" id="name" type="text" name="name" required="">
               </p>
               <p class="paragraph form__field form__field--phone">
-                <label class="form__label visually-hidden" for="tel">Телефон</label>
-                <input class="form__input input-phone" id="tel" type="tel" name="tel" placeholder="Телефон" required="">
+                <label class="form__label" for="tel">Телефон</label>
+                <input class="form__input input-phone" id="tel" type="tel" name="tel" required="">
               </p>
             </div>
             <p class="paragraph form__field form__field--email">
-              <label class="form__label visually-hidden" for="email">E-mail</label>
-              <input class="form__input" id="email" type="email" name="email" placeholder="E-mail" required="">
+              <label class="form__label" for="email">E-mail</label>
+              <input class="form__input" id="email" type="email" name="email"required="">
             </p>
             <p class="paragraph form__field form__field--text">
-              <label class="form__label visually-hidden" for="text">Сообщение</label>
-              <input class="form__input" id="text" type="text" name="text" placeholder="Сообщение" required="">
+              <label class="form__label" for="text">Сообщение</label>
+              <input class="form__input" id="text" type="text" name="text" required="">
             </p>
             <div class="appointment__privacy appointment-privacy">
               <p class="paragraph appointment-privacy__text">Заполняя форму на сайте, вы соглашаетесь с нашей</p>
-              <a class="appointment-privacy__link" href="#">Политикой конфиденциальности</a>
+              <a class="link appointment-privacy__link" href="#">Политикой конфиденциальности</a>
             </div>
             <button class="form__button" type="submit">Отправить</button>
           </form>
@@ -478,7 +471,6 @@
         <p class="footer__copyrights-text">1992-2018 &copy; ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
       </div>
     </footer>
-    <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

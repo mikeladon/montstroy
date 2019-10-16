@@ -136,6 +136,7 @@
 
 .partners__image {
   padding-left: 30px;
+  height: 126px;
 }
 
 .partners__item--mirror .partners__image,
@@ -147,7 +148,7 @@
     display: none;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .partners {
     position: relative;
     margin-bottom: 65px;
