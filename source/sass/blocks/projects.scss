@@ -35,7 +35,6 @@
 
   .projects__item {
     position: relative;
-    width: 24.8%;
     margin-right: 0.2%;
     display: flex;
     flex-direction: column;
@@ -50,6 +49,19 @@
     background-size: cover;
   }
 
+  .projects__item--futur,
+  .projects__item--eagle,
+  .projects__item--family,
+  .projects__item--medial {
+    width: 24.8%;
+  }
+
+  .projects__item--energy,
+  .projects__item--pinocchio {
+    width: 49.8%;
+    max-width: 583px;
+  }
+
   .projects__item:nth-child(4) {
     margin-right: 0px;
   }
@@ -60,8 +72,6 @@
 
   .projects__item:nth-child(4n + 6),
   .projects__item:nth-child(4n + 5) {
-    width: 49.8%;
-    max-width: 583px;
     padding-top: 41px;
     padding-right: 100px;
   }

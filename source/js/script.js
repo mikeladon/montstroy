@@ -31,6 +31,7 @@ serviceBlocks.forEach(function (block) {
 		activeBlock.classList.remove("active-item");
 		this.classList.add("active-item");
 		blockHeight = this.clientHeight + "px";
+		this.blur();
 		onResizeWindow();
 	})
 });
@@ -102,6 +103,8 @@ featureSlides.forEach(function (slide) {
 	})
 });
 
+// Делаем элементы блока partners активными
+
 // Открываем секции при нажатии на бургер
 let onOverlayClick = function (evt) {
 	if (!sectionsList.contains(evt.target)) {
@@ -116,19 +119,123 @@ openSectionsButton.addEventListener("click", function (evt) {
 })
 
 // Проверяем инпут для телефона
-function telephoneCheck() {
-  var patt = new RegExp(/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g);
-  if(patt.test(document.querySelector(".input-phone").value) == false) {
-  	document.querySelector(".input-phone").value = "";
-	}
-}
-document.querySelector(".input-phone").addEventListener("change", telephoneCheck);
-
+var element = document.querySelector('.input-phone');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+var mask = IMask(element, maskOptions);
 
 // Убираем фокус с кнопок слайдера
-
 document.querySelectorAll(".partners__arrow").forEach(function (button) {
 	button.addEventListener("click", function () {
 		this.blur();
 	})
+});
+
+//  делаем свайп
+var featureLike = document.querySelector('.feature-quality');
+var featureAgreement = document.querySelector(".feature-agreement");
+var featureBase = document.querySelector(".feature-base");
+
+// create a simple instance
+// by default, it only adds horizontal recognizers
+var firstFeature = new Hammer(featureLike);
+var secondFeature = new Hammer(featureAgreement);
+var thirdFeature = new Hammer(featureBase);
+
+// listen to events...
+firstFeature.on("swipeleft", function(ev) {
+    if (featureLike.classList.contains("active-feature")) {
+    	featureLike.classList.remove("active-feature");
+    	document.querySelector(".feature-agreement").classList.add("active-feature");
+    	document.querySelector(".button-slider-first").classList.remove("active-slider");
+    	document.querySelector(".button-slider-second").classList.add("active-slider");
+    }
+});
+
+secondFeature.on("swipeleft", function(ev) {
+    if (featureAgreement.classList.contains("active-feature")) {
+    	featureAgreement.classList.remove("active-feature");
+    	document.querySelector(".feature-base").classList.add("active-feature");
+    	document.querySelector(".button-slider-second").classList.remove("active-slider");
+    	document.querySelector(".button-slider-third").classList.add("active-slider")
+    }
+}); 
+
+secondFeature.on("swiperight", function(ev) {
+    if (featureAgreement.classList.contains("active-feature")) {
+    	featureAgreement.classList.remove("active-feature");
+    	featureLike.classList.add("active-feature");
+    	document.querySelector(".button-slider-second").classList.remove("active-slider");
+    	document.querySelector(".button-slider-first").classList.add("active-slider");
+    }
+});
+
+thirdFeature.on("swiperight", function(ev) {
+    if (featureBase.classList.contains("active-feature")) {
+    	featureBase.classList.remove("active-feature");
+    	featureAgreement.classList.add("active-feature");
+    	document.querySelector(".button-slider-third").classList.remove("active-slider");
+    	document.querySelector(".button-slider-second").classList.add("active-slider");
+    }
+});
+
+var firstPartner = document.querySelector(".partners__item--ava");
+var secondPartner = document.querySelector(".partners__item--mirror");
+var thirdPartner = document.querySelector(".partners__item--shield");
+var fourthPartner = document.querySelector(".partners__item--warm");
+
+var firstPartnersButton = document.querySelector(".partners__input--1");
+var secondPartnersButton = document.querySelector(".partners__input--2"); 
+var thirdPartnersButton = document.querySelector(".partners__input--3"); 
+var fourthPartnersButton = document.querySelector(".partners__input--4");
+
+var ava = new Hammer(firstPartner);
+ava.on("swipeleft", function (ev) {
+	if (firstPartnersButton.checked) {
+		firstPartnersButton.checked = false;
+		secondPartnersButton.checked = true;
+	}
 })
+
+var mirror = new Hammer(secondPartner);
+mirror.on("swiperight", function (ev) {
+	if (secondPartnersButton.checked) {
+		secondPartnersButton.checked = false;
+		firstPartnersButton.checked = true;
+	}
+})
+
+var mirror = new Hammer(secondPartner);
+mirror.on("swipeleft", function (ev) {
+	if (secondPartnersButton.checked) {
+		secondPartnersButton.checked = false;
+		thirdPartnersButton.checked = true;
+	}
+})
+
+var shield = new Hammer(thirdPartner);
+shield.on("swiperight", function (ev) {
+	if (thirdPartnersButton.checked) {
+		thirdPartnersButton.checked = false;
+		secondPartnersButton.checked = true;
+	}
+})
+
+var shield = new Hammer(thirdPartner);
+shield.on("swipeleft", function (ev) {
+	if (thirdPartnersButton.checked) {
+		thirdPartnersButton.checked = false;
+		fourthPartnersButton.checked = true;
+	}
+}) 
+
+var warmth = new Hammer(fourthPartner);
+warmth.on("swiperight", function (ev) {
+	if (fourthPartnersButton.checked) {
+		fourthPartnersButton.checked = false;
+		thirdPartnersButton.checked = true;
+	}
+})     
+
+
