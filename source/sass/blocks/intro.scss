@@ -1,6 +1,6 @@
 .intro {
 	background: linear-gradient(0deg,#000 0%,rgba(0,0,0,.2) 63%,rgba(255,255,255,0) 100%);
-	background-image: url("../img/intro-background.webp");
+	background-image: url("../img/intro-background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -80,7 +80,7 @@
 
 @media (max-width: 1023px) {
 	.intro {
-		background-image: url("../img/intro-background-tablet.webp");
+		background-image: url("../img/intro-background-tablet.jpg");
 	}
 
 	.intro-container {
@@ -134,7 +134,7 @@
 @media (max-width: 767px) {
 	.intro {
 		position: relative;
-		background-image: url("../img/intro-background-mobile.webp");
+		background-image: url("../img/intro-background-mobile.jpg");
 		background-position: top;
 	}
 
