@@ -31,7 +31,6 @@ serviceBlocks.forEach(function (block) {
 		activeBlock.classList.remove("active-item");
 		this.classList.add("active-item");
 		blockHeight = this.clientHeight + "px";
-		this.blur();
 		onResizeWindow();
 	})
 });
